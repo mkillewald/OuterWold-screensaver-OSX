@@ -1,0 +1,59 @@
+challenges faced
+
+accessing our bundle since a screensaver is a module and not an application
+
+//    static NSString * const MyModuleName = @"com.gameaholix.OuterWorld";
+
+//    NSBundle *bundle=[NSBundle bundleWithIdentifier:MyModuleName];
+
+manually registering custom fonts located in our bundle
+
+//    // register our custom fonts
+//    NSArray *paths = [bundle pathsForResourcesOfType:@"ttf" inDirectory:@""];
+//
+//    for (NSString *path in paths) {
+//        //NSLog(@"path: %@", path);
+//        NSURL *fontUrl = [[NSURL alloc] initFileURLWithPath:path];
+//
+//        CFErrorRef error;
+//        CTFontManagerRegisterFontsForURL((CFURLRef)fontUrl, kCTFontManagerScopeProcess, &error);
+//    }
+
+listing the registered fonts for debugging
+
+//    // list registered fonts to console for debugging
+//    NSFontManager *fontManager = [NSFontManager sharedFontManager];
+//    NSArray *fontFamilies = [fontManager availableFontFamilies];
+//
+//    for (NSString *family in fontFamilies) {
+//        NSLog(@"%@", family);
+//        NSArray *fonts = [fontManager availableMembersOfFontFamily:family];
+//
+//        for (NSString *font in fonts) {
+//            NSLog(@"\r\t%@", font);
+//        }
+//    }
+
+scaling font to display size. divided size of display by a constant
+
+//    CGFloat fontSize = [self bounds].size.width / 45;
+//    CGFloat fontSize = 22.0 * scale;
+//    NSFont *font = [NSFont fontWithName:@"pixelmix Regular" size:fontSize];
+
+
+animating characters being displayed or typed. used switch statement on frameCounter and a string index to append characters at given frames
+
+//    switch (frameCounter)
+
+//        case 70:
+//            [mainTextStorage replaceCharactersInRange:NSMakeRange([mainTextStorage length] - 1, 0)
+//                                       withString:[@"RUN PROJECT 23" substringWithRange:NSMakeRange(index, 1)]];
+//            index ++; // character index within "RUN PROJECT 23"
+//            break;
+
+
+
+TO DO:
+
+- change drawing routines so that static background elements are not redrawn on every frame
+- figure out now to apply NSAffineTrasform to all drawing instead of just on the synchrotron

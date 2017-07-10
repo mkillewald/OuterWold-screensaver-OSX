@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D3DB28E1EC36D5000EBAAC6 /* Monopoly Regular2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D3DB28D1EC36D5000EBAAC6 /* Monopoly Regular2.ttf */; };
+		4D3DB2921EC4A98600EBAAC6 /* VisitorTT2BRK.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D3DB2911EC4A98600EBAAC6 /* VisitorTT2BRK.ttf */; };
 		4D764B161EA90B45006035D5 /* OuterWorldView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D764B151EA90B45006035D5 /* OuterWorldView.h */; };
 		4D764B181EA90B45006035D5 /* OuterWorldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D764B171EA90B45006035D5 /* OuterWorldView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D03A74C1EAA6490002D723B /* Notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
+		4D3DB28D1EC36D5000EBAAC6 /* Monopoly Regular2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Monopoly Regular2.ttf"; sourceTree = "<group>"; };
+		4D3DB2911EC4A98600EBAAC6 /* VisitorTT2BRK.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = VisitorTT2BRK.ttf; sourceTree = "<group>"; };
 		4D764B121EA90B45006035D5 /* OuterWorld.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OuterWorld.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D764B151EA90B45006035D5 /* OuterWorldView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OuterWorldView.h; sourceTree = "<group>"; };
 		4D764B171EA90B45006035D5 /* OuterWorldView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OuterWorldView.m; sourceTree = "<group>"; };
@@ -51,6 +56,9 @@
 				4D764B151EA90B45006035D5 /* OuterWorldView.h */,
 				4D764B171EA90B45006035D5 /* OuterWorldView.m */,
 				4D764B191EA90B45006035D5 /* Info.plist */,
+				4D3DB28D1EC36D5000EBAAC6 /* Monopoly Regular2.ttf */,
+				4D3DB2911EC4A98600EBAAC6 /* VisitorTT2BRK.ttf */,
+				4D03A74C1EAA6490002D723B /* Notes */,
 			);
 			path = OuterWorld;
 			sourceTree = "<group>";
@@ -125,6 +133,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D3DB2921EC4A98600EBAAC6 /* VisitorTT2BRK.ttf in Resources */,
+				4D3DB28E1EC36D5000EBAAC6 /* Monopoly Regular2.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,12 +244,14 @@
 		4D764B1D1EA90B45006035D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 2XM2MCTE5S;
 				INFOPLIST_FILE = OuterWorld/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gameaholix.OuterWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -247,12 +259,14 @@
 		4D764B1E1EA90B45006035D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 2XM2MCTE5S;
 				INFOPLIST_FILE = OuterWorld/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gameaholix.OuterWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Release;
@@ -276,6 +290,7 @@
 				4D764B1E1EA90B45006035D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
